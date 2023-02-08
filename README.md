@@ -12,6 +12,6 @@ Hi! projects-page is a web page presenting **my experiences** and the **projects
 -  PsstCSS
 -  PostCSS-CLI
 
-**To view the page online click :point_right: [here]((https://cla31.github.io/projects-page/))**
+**To view the page online click :point_right:** [here]((https://cla31.github.io/projects-page/))
 
 
