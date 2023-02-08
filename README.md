@@ -2,7 +2,7 @@
 # projects-page :feet: 
 
 **Presentation:**
-Hi! projects-page is a web page presenting **my experiences** and the **projects** I have carried out in the field of the web and the network.![Texte alternatif](./public/img/rose.png'Une Rose')
+Hi! projects-page is a web page presenting **my experiences** and the **projects** I have carried out in the field of the web and the network.
 
 **Prerequisites:**
 - NodeJS
