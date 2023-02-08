@@ -2,7 +2,7 @@
 # projects-page :feet: 
 
 **Presentation:** <br/> <br/>
-Hi! projects-page is a web page presenting **my experiences** and the **projects** I have carried out in the field of the web and the network.
+Hi! projects-page is a web page presenting **my experiences** and the **projects** I have carried out in the field of the web and the network.<br/> <br/>
 ![Texte alternatif](./public/img/rose.png)
 
 **Prerequisites:**
