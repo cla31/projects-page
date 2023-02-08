@@ -5,14 +5,6 @@
 Hi! projects-page is a web page presenting **my experiences** and the **projects** I have carried out in the field of the web and the network.
 
 
-**Prerequisites:**
-- NodeJS
-- Sass
-- NPM
-- Autoprefixer
--  PsstCSS
--  PostCSS-CLI
-
 **To view the page online click :point_right:** [here](https://cla31.github.io/projects-page/)
 
 
