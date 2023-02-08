@@ -1,0 +1,196 @@
+html,
+body {
+  margin: 0;
+  position: relative;
+}
+
+body {
+  padding: 1em;
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+.timelines {
+  max-width: 1000px;
+  margin-top: 50px;
+  padding-left: 100px;
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .timelines {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .timelines {
+    padding-left: 0px;
+  }
+}
+
+.titles .title-name {
+  height: 50px;
+  font-size: 28px;
+  font-weight: 900;
+}
+@media screen and (max-width: 768px) {
+  .titles .title-name {
+    font-size: 22px;
+  }
+}
+.titles .title-icon {
+  display: flex;
+  padding-left: 109px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .titles .title-icon {
+    padding-left: 75px;
+  }
+}
+.titles .title-icon img {
+  width: 50px;
+  padding-right: 2px;
+}
+@media screen and (max-width: 768px) {
+  .titles .title-icon img {
+    width: 40px;
+  }
+}
+.titles .title-icon .cartouche-title {
+  width: 95%;
+  background-color: #adb9ca;
+  padding-top: 5px;
+}
+.titles .title-icon .cartouche-title .projets-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  padding-left: 5px;
+  margin: 0px;
+}
+@media screen and (max-width: 768px) {
+  .titles .title-icon .cartouche-title .projets-title {
+    font-size: 20px;
+  }
+}
+
+.items {
+  display: flex;
+}
+.items .dates-items {
+  padding-right: 50px;
+}
+@media screen and (max-width: 768px) {
+  .items .dates-items {
+    padding-right: 15px;
+  }
+}
+.items .timeline-items {
+  position: relative;
+}
+.items .timeline-items .vertical-line {
+  border-left: 1px solid #adb9ca;
+  display: inline-block;
+  height: 1478px;
+  margin: -16px -36px;
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .items .timeline-items .vertical-line {
+    margin: -16px -16px;
+    height: 2242px;
+  }
+}
+.items .timeline-items .vertical-line--reseau {
+  height: 230px;
+}
+@media screen and (max-width: 768px) {
+  .items .timeline-items .vertical-line--reseau {
+    height: 348px;
+  }
+}
+
+.timeline-item {
+  margin-bottom: 2em;
+  height: 100px;
+}
+@media screen and (max-width: 768px) {
+  .timeline-item {
+    height: 170px;
+  }
+}
+.timeline-item h3 {
+  font-size: 1em;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .timeline-item h3 {
+    font-size: 14px;
+  }
+}
+.timeline-item h3::before {
+  content: "";
+  position: absolute;
+  left: -2.55em;
+  background-color: #adb9ca;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .timeline-item h3::before {
+    left: -1.45em;
+  }
+}
+.timeline-item h3 span {
+  font-weight: 300;
+}
+.timeline-item .link {
+  font-weight: 300;
+}
+@media screen and (max-width: 768px) {
+  .timeline-item .link {
+    font-size: 14px;
+  }
+}
+.timeline-item .link a {
+  color: black;
+}
+.timeline-item--date {
+  width: 120px;
+}
+@media screen and (max-width: 768px) {
+  .timeline-item--date {
+    width: 90px;
+    padding-right: 5px;
+  }
+}
+.timeline-item--date h3 {
+  font-weight: 300;
+}
+.timeline-item--date h3::before {
+  background-color: white;
+}
+@media screen and (max-width: 768px) {
+  .timeline-item--date h3 {
+    font-size: 12px;
+  }
+}
+.timeline-item--item1-reseau {
+  height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .timeline-item--item1-reseau {
+    height: 60px;
+  }
+}
+.timeline-item--item2-reseau {
+  height: 110px;
+}
+@media screen and (max-width: 768px) {
+  .timeline-item--item2-reseau {
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

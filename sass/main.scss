@@ -1,0 +1,195 @@
+@use "sass:math";
+$color-elements:#adb9ca;
+$color-secondary:white;
+$timeline-left-padding: 2.2em; // Distance entre la ligne et le texte
+$timeline-bullet-width: .7em; // Diamètre des puces de la timeline
+$breakpoints:(mobile:768px, tablette: 769px, desktop: 992px);
+@mixin tablette-only {
+    @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+html,
+body {
+    margin: 0;
+    position: relative; // Pour mettre les pseudos elements en absolu;
+}
+
+body {
+    padding: 1em;
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+.timelines {
+    // border: 2px solid black;
+    max-width: 1000px;
+    margin-top: 50px;
+    padding-left: 100px;
+    @include tablette-only() {
+        padding-left: 20px;
+    }
+    @include mobile-only() {
+        padding-left: 0px;
+    }
+}
+
+.titles {
+    // border: 2px solid blue;
+    .title-name {
+        height: 50px;
+        font-size: 28px;
+        font-weight: 900;
+        // border: 2px solid blue;
+        @include mobile-only() {
+            font-size: 22px;
+        }
+    }
+    .title-icon {
+        // border: 2px solid blue;
+        display: flex;
+        padding-left: 109px;
+        padding-bottom: 10px;
+        @include mobile-only() {
+            padding-left: 75px;
+        }
+        img {
+            width: 50px;
+            padding-right: 2px;
+            @include mobile-only() {
+                width: 40px;
+            }
+        }
+        .cartouche-title {
+            // border: 2px solid green;
+            width: 95%;
+            background-color: $color-elements;
+            padding-top: 5px;
+            .projets-title {
+                font-size: 24px;
+                font-weight: 700;
+                color: $color-secondary;
+                padding-left: 5px;
+                margin: 0px;
+                // border: 2px solid black;
+                @include mobile-only() {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.items {
+    // border: 2px solid blue;
+    display: flex;
+    .dates-items {
+        // border: 2px solid purple;
+        padding-right: 50px;
+        @include mobile-only() {
+            padding-right: 15px;
+        }
+    }
+    .timeline-items {
+        // border: 2px solid orange;
+        position: relative;
+        //Set-up du trait
+        .vertical-line {
+            border-left: 1px solid $color-elements;
+            display: inline-block;
+            height: 1478px;
+            margin: -16px -36px;
+            position: absolute;
+            @include mobile-only() {
+                margin: -16px -16px;
+                height: 2242px;
+            }
+            &--reseau {
+                height: 230px;
+                @include mobile-only() {
+                    height: 348px;
+                }
+            }
+        }
+    }
+}
+
+.timeline-item {
+    margin-bottom: 2em;
+    // border: 2px solid purple;
+    height: 100px;
+    @include mobile-only() {
+        height: 170px;
+    }
+    h3 {
+        font-size: 1em;
+        font-weight: 500;
+        // text-transform: uppercase;
+        margin: 0 0 5px 0;
+        position: relative; // pour mettre les puces en absolu;
+        @include mobile-only() {
+            font-size: 14px;
+        }
+        //Set-up puces
+        &::before {
+            content: "";
+            position: absolute;
+            left: -#{$timeline-left-padding + math.div($timeline-bullet-width, 2)};
+            background-color: $color-elements;
+            width: $timeline-bullet-width;
+            height: $timeline-bullet-width;
+            border-radius: 50%;
+            @include mobile-only() {
+                left:-#{1.1em + math.div($timeline-bullet-width, 2)};
+            }
+        }
+        span {
+            font-weight: 300;
+        }
+    }
+    .link {
+        font-weight: 300;
+        @include mobile-only() {
+            font-size: 14px;
+        }
+        a {
+            color: black;
+        }
+    }
+    &--date {
+        // border: 2px solid purple;
+        width: 120px;
+        @include mobile-only() {
+            width: 90px;
+            padding-right: 5px;
+        }
+        h3 {
+            // text-transform: lowercase;
+            &::before {
+                background-color: $color-secondary;
+            }
+            font-weight: 300;
+            @include mobile-only() {
+                font-size: 12px;
+            }
+        }
+    }
+    &--item1-reseau {
+        height: 30px;
+        @include mobile-only() {
+            height: 60px;
+        }
+    }
+    &--item2-reseau {
+        height: 110px;
+        @include mobile-only() {
+            height: 200px;
+        }
+    }
+}
