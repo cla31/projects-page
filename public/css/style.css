@@ -56,7 +56,7 @@ body {
 }
 .titles .title-icon .cartouche-title {
   width: 95%;
-  background-color: #adb9ca;
+  background-color: #229292;
   padding-top: 5px;
 }
 .titles .title-icon .cartouche-title .projets-title {
@@ -87,7 +87,7 @@ body {
   position: relative;
 }
 .items .timeline-items .vertical-line {
-  border-left: 1px solid #adb9ca;
+  border-left: 1px solid #229292;
   display: inline-block;
   height: 1478px;
   margin: -16px -36px;
@@ -132,7 +132,7 @@ body {
   content: "";
   position: absolute;
   left: -2.55em;
-  background-color: #adb9ca;
+  background-color: #229292;
   width: 0.7em;
   height: 0.7em;
   border-radius: 50%;
